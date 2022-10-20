@@ -1,0 +1,192 @@
+body {
+  background-image: url("https://elmawkaa.com/img/bg/home-bg-white.jpg");
+  color: rgb(134, 139, 161);
+  overflow-x: hidden;
+}
+* {
+  direction: rtl;
+  font-family: "Droid Arabic Kufi";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --pri-color: rgb(51, 51, 51);
+  --sec-color: rgb(255, 255, 255);
+  --thir-color: rgb(147, 92, 174);
+  --for-color: rgb(111, 69, 132);
+  --fiv-color: rgba(255, 255, 255, 0.75);
+  --six-color: rgb(233, 236, 239);
+  --seven-color: rgb(170, 170, 170);
+
+  --transition: all 0.2s ease;
+  --shadow: 0 0 10px rgb(0 0 0 / 15%);
+}
+/* The upper div */
+section {
+  display: flex;
+  justify-content: center;
+}
+/* All Forms */
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 800px;
+  background-color: var(--sec-color);
+  border: 1px solid var(--seven-color);
+  border-radius: 6px;
+  overflow-x: hidden;
+}
+/* The First div of the form styling */
+.container .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+  text-align: center;
+}
+.info .heading p {
+  font-size: 20px;
+}
+.info .heading h4 {
+  font-size: 40px;
+}
+.container .info a {
+  border: 1px solid var(--thir-color);
+  text-decoration: none;
+  color: var(--thir-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 20px;
+  transition: var(--transition);
+}
+.container .info a:hover {
+  background-color: var(--thir-color);
+  color: var(--sec-color);
+}
+.container .info .img-box {
+  width: 230px;
+}
+.container .info .img-box img {
+  width: 100%;
+}
+/* Progress Styling */
+.container .form-wraper {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
+.container .form-wraper #progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.container .form-wraper #progress a {
+  padding: 20px 30px;
+  background-color: var(--six-color);
+  color: var(--seven-color);
+  border-radius: 6px;
+  font-weight: bold;
+}
+.container .form-wraper #progress .number1 {
+  background-color: var(--thir-color);
+  color: var(--sec-color);
+}
+/* The Second div */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--six-color);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.multi-form {
+  display: flex;
+}
+.form .same {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  color: var(--seven-color);
+  margin-right: 20px;
+}
+.form .product-name select,
+.form .quantity input {
+  appearance: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+}
+.form .same select {
+  padding: 10px;
+  border: none;
+  outline: none;
+  position: relative;
+  color: var(--seven-color);
+  border: 1px solid var(--seven-color);
+  border-radius: 6px;
+}
+.form .same input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  position: relative;
+  color: var(--seven-color);
+  border: 1px solid var(--seven-color);
+  border-radius: 6px;
+}
+.form a {
+  padding: 15px;
+  border: 1px solid var(--thir-color);
+  width: 170px;
+  border-radius: 6px;
+  color: var(--pri-color);
+  font-size: 20px;
+}
+.form .same2 {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.form-wraper .buttons {
+  direction: ltr;
+  display: flex;
+  justify-content: space-between;
+}
+.form-wraper .buttons button {
+  width: 70px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  margin: 20px 10px;
+  background-color: var(--thir-color);
+  color: var(--sec-color);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* The Second Form */
+.container2 {
+  right: -80%;
+  position: relative;
+  transition: var(--transition);
+}
+.container2 .number1 {
+  background-color: #6610f2 !important;
+}
+.container2 .number2 {
+  background-color: var(--thir-color) !important;
+  color: var(--sec-color) !important;
+}
